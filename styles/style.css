@@ -396,7 +396,7 @@ li span {
   font-size: 1rem;
   color: #FFF;
   font-family: 'Julius Sans One', sans-serif;
-  padding-top: 15px;
+  padding-top: 20px;
 }
 
 /*-----Info-----*/
@@ -596,11 +596,17 @@ footer{
   padding-right: 5px;
 }
 
+.derechos i:hover {
+  transform: scale(1.5);
+}
 
 /*-------TRISKEL------------*/
 
 #triskel{
   background-color: rgb(48, 46, 46);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .triskel1 p{
@@ -611,8 +617,8 @@ footer{
 }
 
 #tris{
-  font-family: "Roboto", sans-serif;
+  font-family: 'Style Script', cursive;
   color: #FFF;
-  font-size: calc(0.3rem + 0.5vw);
+  font-size: calc(0.5rem + 1vw);
   text-align: center;
 }
