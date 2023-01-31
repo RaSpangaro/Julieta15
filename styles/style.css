@@ -7,169 +7,68 @@
   margin: 0%;
 }
 
-#main{
+html{
   height: 100vh;
-  width: 100vw;
-}
-
-
-/*Just the background stuff*/
-span.s1 {
-  position: absolute;
-  top: 0;
-  font-size: 15rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #3C4447;
-}
-
-span.s2 {
-  font-weight: 800;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  font-size: 15rem;
-  text-transform: uppercase;
-  color: #3C4447;
-}
-
-#index {
-  background-color: #353B3F;
-  font-family: "Roboto", sans-serif;
   width: 100%;
 }
 
-/* The card */
-.card {
-  position: relative;
-  height: 650px;
-  width: 900px;
-  margin: 200px auto;
-  background-color: #FFF;
-  -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+body{
+  font-family: 'Julius Sans One', sans-serif;
+  padding: 20px;
 }
 
-/* Image on the left side */
-.thumbnail {
-  float: left;
-  position: relative;
-  left: 30px;
-  top: -30px;
-  height: 620px;
-  width: 530px;
-  -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
-  overflow: hidden;
+#contenedor_header{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 25%;
+  padding: 20px;
+  width: 100%;
 }
 
-/*object-fit: cover;*/
-/*object-position: center;*/
-img.left {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: 100%;
-  width: auto;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.nombres{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* Right side of the card */
-.right {
-  margin-left: 590px;
-  margin-right: 20px;
-}
-
-.right img{
-    padding-top: 30px;
-}
-
-
-h1 {
-    text-align: center;
-    padding-top: 15px;
-    font-size: 5rem;
-    font-family: 'Rochester', cursive;
-    color: #e75f8c;
-}
-
-p {
-  text-align: justify;
-  padding-top: 30px;
-  font-size: 1.5rem;
-  line-height: 150%;
-  color: #4B4B4B;
+#nombre{
+  color: #e75f8c;
+  font-size: calc(4rem + 3.3vw);
   font-family: 'Rochester', cursive;
 }
 
+#fecha{
+  color:rgb(95, 85, 63);
+  font-size: calc(0.5rem + 2.3vw);
+  font-family: 'Julius Sans One', sans-serif;
+}
 
-/* Floating action button */
-.fab {
-  position: absolute;
-  right: 50px;
-  bottom: -40px;
-  box-sizing: border-box;
-  padding-top: 18px;
-  background-color: #e75f8c;
-  width: 80px;
-  height: 80px;
-  color: white;
-  text-align: center;
-  border-radius: 50%;
-  -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
-}
-.fab a{
-    text-decoration: none;
-    color: #FFF;
-}
 
 /*------------------------------------------------------------------------------------------------------------------------/*
 /*------------------------------------------------MAIN--------------------------------------------------------------------/*
 /*------------------------------------------------------------------------------------------------------------------------*/
 
-.principal{
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.inicio{
+main{
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 40vh;
+  width: 100%;
+  height: 100%;
 }
 
-.inicio span{
-  font-size: calc(7rem + 3.3vw);;
-  font-family: 'Rochester', cursive;
-  color: #e75f8c;
-  padding-bottom: 10px;
-}
-
-.inicio h2{
-  margin-top: 10px;
-  font-size: calc(1.5rem + 1.3vw);
-  color: #4B4B4B;
-  font-family: 'Julius Sans One', sans-serif;
-}
-
-/*-----Cards--------*/
-
-.container{
-  padding: 20 40px;
+#contenedor_main {
+  height: 80%;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
+
+/*-------CARDS-------*/
 
 .card_main{
   height: 60%;
@@ -198,28 +97,55 @@ p {
   width: 70%;
 }
 
-@media screen and (max-width: 978px) {
-  .container{
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-
-  .card_main{
-    max-width: 700px;
-    margin: 20px 0;
-  }
+.inicio{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 30px;
+  height: 100%;
+  width: 100%;
 }
 
+.clearfix{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+}
+
+.clearfix p{
+  color: rgb(48, 46, 46);
+  font-size: calc(0.95rem + 1vw);
+  font-family: 'Rochester', cursive;
+  padding-top: 30px;
+  text-align: center;
+  width: 70%;
+}
+
+.clearfix img{
+  height: auto;
+  max-width: 15%;
+  text-align: end;
+}
+
+
+/*-----SECTION MAIN PRINCIPAL---*/
 
 #ppal{
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 90%;
-    background-color: #353B3F;
-    font-family: "Roboto", sans-serif;
+    height: 100%;
+    font-family: 'Julius Sans One', sans-serif;
+    padding-top: 30px;
   }
 
+  .fecha{
+    width: 90%;
+  }
+  
 /*-----Contador-----*/
 
 .contenedor {
@@ -229,32 +155,14 @@ p {
   margin-top: 30px;
 }
 
-.fecha{
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 50%;
-}
-
-#data {
-  width: 90%;
-  height: 20vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#data h2{
+.contenedor h2{
+  color: #e75f8c;;
   font-family: 'Julius Sans One', sans-serif;
-  font-size: (0.9em + 1vw);
-  color: #FFF;
+  font-size: calc(1rem + 1.5vw);
 }
 
 .cartel {
-  background-color: #FFF;
+  background-color: rgb(48, 46, 46);
   width: 110px;
   height: 110px;
   padding: 10px 0px 5px 0px;
@@ -270,19 +178,18 @@ p {
   animation: fade 3s;
   line-height: 30px;
   margin-top: 15px;
-  color:  #e75f8c;
 }
 
 #dias, #horas, #minutos, #segundos{
   font-size: 3.5em;
-  color:  #e75f8c;
+  color: #FFF;
 }
 
 .h3 h3 {
   margin-top: 15px;
   font-size: 0.8em;
   font-weight: normal;
-  color:  #e75f8c;
+  color:  #FFF;
 }
 
 .h3 {
@@ -291,6 +198,7 @@ p {
 }
 
 .contenido {
+  padding-top: 20px;
   width: 80%;
   margin: 0 auto;
   border: 0px solid   #e75f8c;;
@@ -338,6 +246,7 @@ li span {
   .cartel {
       height: 99px;
       width: 99px;
+      box-shadow: 0 70px 63px -60px #000;
   }
 
   .cartel>div{
@@ -361,70 +270,62 @@ li span {
   }
 }
 
+/*-----Lugar-----*/
+
+.datos_lugar{
+  align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  border-radius: 5px;
+}
+
 .lugar{
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 10%;
-  padding-bottom: 0%;
-  height: 25vh;
-}
-
-.lugar h2{
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: (1em + 1vw);
-  color: #FFF;
-}
-
-.lugar h4{
-  margin-top: 10px;
-  padding-top: 0%;
-  font-size: (0.8em + 1vw);
-  color: #FFF;
-  font-family: 'Julius Sans One', sans-serif;
-}
-
-/*-----Info-----*/
-
-#info{
-  background-color: #FFF;
-  border-radius: 5px;
-  height: 40vh;
+  height: 30%;
   width: 90%;
 }
 
-#mapa{
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
+.lugar h2{
+  color: #e75f8c;;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: calc(1rem + 1.5vw);
+}
+
+.lugar h4{
+  color: lightcoral;
+  font-size: calc(0.5rem + 0.5vw);
+  font-family: 'Julius Sans One', sans-serif;
+  padding-bottom: 30px;
+}
+
+.mapa{
+  width: 80%;
+  height: 500px;
   border-radius: 5px;
 }
 
-#mapa iframe{
-  height: 100%;
-  width: 100%;
+.mapa iframe{
+  height: 90%;
+  width: 90%;
 }
+
 
 /*-----Galeria-----*/
 
 #galeria{
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 60vh;
-  width: 90%;
-  background-color: #FFF;
+  height: 50%;
+  width: 100%;
   border-radius: 5px;
   margin-top: 20px;
 }
 
-
 #wrapper {
-  width: 100%;
+  width: 90%;
   max-width: 85%;
   position: relative;
 }
@@ -444,7 +345,7 @@ li span {
   display: flex;
   justify-content: center;
   align-content: center;
-  background: white;
+  background: rgb(248, 244, 244);
   border: none;
   padding: 8px;
   border-radius: 50%;
@@ -479,64 +380,20 @@ li span {
   height: 320px;
 }
 
-.fab_main {
-  padding-top: 18px;
-  text-align: center;
-  box-sizing: border-box;
-  background-color: #e75f8c;
-  width: 80px;
-  height: 80px;
-  color: white;
-  text-align: center;
-  border-radius: 50%;
-  -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
-}
-
-.fab_main a{
-    text-decoration: none;
-    color: #FFF;
-    font-size: 3em;
-}
-
-#final{
-  padding-top: -10px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 15vh;
-  width: 90%;
-  border-radius: 5px;
-}
-
-@media screen and (max-width: 978px) {
-  .fab_main{
-    width: 50px;
-    height: 50px;
-  }
-
-  .fab_main a{
-    font-size: 1em;
-    padding-top: 8px;
-    text-align: center;
-    bottom: -10;
-  }
-}
 /*---------------------FOOTER--------------------*/
+
 footer{
   align-items: center;
-  background-color: #FFF;
   display: flex;
-  height: 20vh;
+  height: 30vh;
   flex-direction: column;
   justify-content:center;
-  min-width: 100%;
-  width: 90%;
+  width: 100%;
   border-radius: 5px;
 }
 
 .redes{
+  padding-top: 20px;
   width: 100%;
   align-items: center;
   display: flex;
@@ -552,7 +409,7 @@ footer{
   color:black;
   font-family: 'Julius Sans One', sans-serif;
   justify-content: center;
-  font-size: calc(0.5rem + 1vw);
+  font-size: calc(0.8rem + 1vw);
   width: 100%;
 }
 
@@ -562,7 +419,6 @@ footer{
   padding-left: 10px;
 }
 
-
 .derechos{
   align-items: center;
   display: flex;
@@ -571,7 +427,7 @@ footer{
 }
 
 .derechos p{
-  font-size: calc(0.8em + 0.5vw);
+  font-size: calc(0.8em + 1.3vw);
   color: black;
   font-family: 'Rochester', cursive;
   padding-bottom: 30px;
@@ -612,3 +468,27 @@ footer{
   font-size: calc(0.8rem + 1.5vw);
   text-align: center;
 }
+
+#final{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
+  height: 30%;
+  width: 100%;
+}
+#final button{
+  background-color: rgb(48, 46, 46);
+    color: #FFF;
+    height: 50px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
