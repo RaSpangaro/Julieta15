@@ -9,8 +9,9 @@
 
 #main{
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
+
 
 /*Just the background stuff*/
 span.s1 {
@@ -35,6 +36,7 @@ span.s2 {
 #index {
   background-color: #353B3F;
   font-family: "Roboto", sans-serif;
+  width: 100%;
 }
 
 /* The card */
@@ -89,19 +91,19 @@ img.left {
 
 h1 {
     text-align: center;
-    padding-top: 25px;
+    padding-top: 15px;
     font-size: 5rem;
-    font-family: 'Style Script', cursive;
+    font-family: 'Rochester', cursive;
     color: #e75f8c;
 }
 
 p {
   text-align: justify;
   padding-top: 30px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 150%;
   color: #4B4B4B;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Rochester', cursive;
 }
 
 
@@ -143,16 +145,18 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 40vh;
 }
 
 .inicio span{
   font-size: calc(7rem + 3.3vw);;
-  font-family: 'Style Script', cursive;
+  font-family: 'Rochester', cursive;
   color: #e75f8c;
+  padding-bottom: 10px;
 }
 
 .inicio h2{
-  margin-top: -15px;
+  margin-top: 10px;
   font-size: calc(1.5rem + 1.3vw);
   color: #4B4B4B;
   font-family: 'Julius Sans One', sans-serif;
@@ -161,35 +165,37 @@ p {
 /*-----Cards--------*/
 
 .container{
-  padding: 0 40px;
+  padding: 20 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .card_main{
-  height: 280px;
-  max-width: 350px;
-  margin: 0 20px;
-  background: white;
-  transition: 0.4s;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-}
-
-.img img:hover{
-  height: 300px;
-  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-}
-
-.img{
-  height: 380px;
+  height: 60%;
   width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.img img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+.card img{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.card_main div img{
+  align-items: center;
+  border-radius: 10px;
+  height: auto;
+  display: flex;
+  margin: 10px;
+  min-width: 80%;
+  width: 70%;
 }
 
 @media screen and (max-width: 978px) {
@@ -204,11 +210,12 @@ p {
   }
 }
 
+
 #ppal{
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 80%;
+    height: 90%;
     background-color: #353B3F;
     font-family: "Roboto", sans-serif;
   }
@@ -219,17 +226,30 @@ p {
   color: rgb(103, 91, 61);
   text-align: center;
   width: 100%;
+  margin-top: 30px;
 }
 
 .fecha{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
-  padding-bottom: 20px;
+  height: 50%;
 }
 
-.contenedor h2{
-  padding-top: 20px;
+#data {
+  width: 90%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#data h2{
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 2em;
+  font-size: (0.9em + 1vw);
   color: #FFF;
 }
 
@@ -268,16 +288,6 @@ p {
 .h3 {
   bottom: 0;
   margin: 0 auto ;
-}
-
-.contenedor {
-  margin-top: 10%;
-}
-
-.contenedor h2{
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: calc(1rem + 1.3vw);
-  padding-bottom: 10px;
 }
 
 .contenido {
@@ -350,62 +360,37 @@ li span {
       opacity: 1;
   }
 }
-#main{
-  background-color: aliceblue;
-}
-
-.card_main{
-  height: 60%;
-  width: 100%;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 70px 63px -60px #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card img{
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-.card_main div img{
-  align-items: center;
-  border-radius: 10px;
-  height: auto;
-  display: flex;
-  margin: 10px;
-  min-width: 80%;
-  width: 70%;
-}
-
 
 .lugar{
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-bottom: 0%;
+  justify-content: center;
+  margin-bottom: 10%;
   padding-bottom: 0%;
+  height: 25vh;
+}
+
+.lugar h2{
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: (1em + 1vw);
+  color: #FFF;
 }
 
 .lugar h4{
-  margin-top: -2%;
+  margin-top: 10px;
   padding-top: 0%;
-  font-size: 1rem;
+  font-size: (0.8em + 1vw);
   color: #FFF;
   font-family: 'Julius Sans One', sans-serif;
-  padding-top: 20px;
 }
 
 /*-----Info-----*/
 
 #info{
-  top: 20px;
   background-color: #FFF;
   border-radius: 5px;
-  height: 50vh;
+  height: 40vh;
   width: 90%;
 }
 
@@ -413,11 +398,14 @@ li span {
   align-items: center;
   display: flex;
   justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
 }
 
 #mapa iframe{
-  height: 50vh;
-  width: 80vw;
+  height: 100%;
+  width: 100%;
 }
 
 /*-----Galeria-----*/
@@ -529,7 +517,7 @@ li span {
   }
 
   .fab_main a{
-    font-size: 0.6em;
+    font-size: 1em;
     padding-top: 8px;
     text-align: center;
     bottom: -10;
@@ -585,7 +573,7 @@ footer{
 .derechos p{
   font-size: calc(0.8em + 0.5vw);
   color: black;
-  font-family: 'Cookie', cursive;
+  font-family: 'Rochester', cursive;
   padding-bottom: 30px;
 }
 
@@ -607,18 +595,20 @@ footer{
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .triskel1 p{
-    font-size: calc(0.3rem + 0.5vw);
+    font-size: calc(0.5rem + 1vw);
     padding-top: 20px;
     color: #FFF;
     text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 #tris{
-  font-family: 'Style Script', cursive;
+  font-family: 'Rochester', cursive;
   color: #FFF;
-  font-size: calc(0.5rem + 1vw);
+  font-size: calc(0.8rem + 1.5vw);
   text-align: center;
 }
